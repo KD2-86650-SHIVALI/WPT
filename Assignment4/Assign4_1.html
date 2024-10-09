@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Calculator</title>
+</head>
+<body>
+
+    <center><h1> Calculator</h1></center>
+  <center><table style="height: 300px; width: 300px;">
+ <tr>
+<td>Enter Number 1</td>
+<td> <input type="text" id="firstnumber"></td>
+ </tr>
+
+ <tr>
+<td>Enter Number 2</td>
+<td> <input type="text" id="Secondnumber"></td>
+
+ </tr>
+
+ <tr>
+<td> Result</td>
+<td> <input type="text" id="result"></td>
+
+ </tr>
+
+  </table> 
+</center> 
+
+
+
+<center><input type="button" id="btnadd" value="Addition" onclick="Addition()"/>
+<input type="button" id="btnsub" value="Substraction" onclick="Substraction()"/>
+<input type="button" id="btnmul" value="Multiplication" onclick="Multiplication()"/>
+<input type="button" id="btndiv" value="Division" onclick="Division()"/></center>
+ 
+<script>
+
+function Addition()
+{
+    var reftofirstnumber = document.getElementById("firstnumber");
+    var reftosecondnumber = document.getElementById("Secondnumber");
+    var reftoresult = document.getElementById("result");
+     var f = parseInt(reftofirstnumber.value);
+     var s =parseInt(reftosecondnumber.value);
+     var result = f+s;
+     reftoresult.value = result;
+}
+
+function Substraction()
+{
+    var reftofirstnumber = document.getElementById("firstnumber");
+    var reftosecondnumber = document.getElementById("Secondnumber");
+    var reftoresult = document.getElementById("result");
+     var f = parseInt(reftofirstnumber.value);
+     var s =parseInt(reftosecondnumber.value);
+     var result = f-s;
+     reftoresult.value = result;
+}
+
+function Multiplication()
+{
+    var reftofirstnumber = document.getElementById("firstnumber");
+    var reftosecondnumber = document.getElementById("Secondnumber");
+    var reftoresult = document.getElementById("result");
+     var f = parseInt(reftofirstnumber.value);
+     var s =parseInt(reftosecondnumber.value);
+     var result = f*s;
+     reftoresult.value = result;
+}
+
+function Division()
+{
+    var reftofirstnumber = document.getElementById("firstnumber");
+    var reftosecondnumber = document.getElementById("Secondnumber");
+    var reftoresult = document.getElementById("result");
+     var f = parseInt(reftofirstnumber.value);
+     var s =parseInt(reftosecondnumber.value);
+     var result = f/s;
+     reftoresult.value = result;
+}
+
+</script>
+
+</body>
+</html>

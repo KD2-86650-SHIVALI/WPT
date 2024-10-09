@@ -1,0 +1,30 @@
+#car {
+    position: absolute;
+    width: 200px;
+    top: 80px;
+}
+
+#road {
+    position: absolute;
+    top: 180px;
+    width: 400px;
+    height: 5px;
+    background-color: black;
+}
+
+#car-container {
+    position: absolute;
+    border: 2px solid red;
+    padding: 10px;
+    display: none; 
+}
+
+#car-text {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+input {
+    margin: 200px 0;
+}
